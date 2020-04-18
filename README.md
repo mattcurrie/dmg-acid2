@@ -30,8 +30,8 @@ When emulating a CGB running in DMG mode, you should use this formula to
 convert each 5-bit CGB palette component to 8-bit: 
 `(r << 3) | (r >> 2)`
 
-[Reference photo from DMG](https://github.com/mattcurrie/dmg-acid2/raw/master/img/photo-dmg.jpg) 
-[Reference photo from CGB](https://github.com/mattcurrie/dmg-acid2/raw/master/img/photo-cgb.jpg)
+* [Reference photo from DMG](https://github.com/mattcurrie/dmg-acid2/raw/master/img/photo-dmg.jpg) 
+* [Reference photo from CGB](https://github.com/mattcurrie/dmg-acid2/raw/master/img/photo-cgb.jpg)
 
 ## Emulator Requirements
 A simple line based renderer is sufficient to generate the correct output. This
