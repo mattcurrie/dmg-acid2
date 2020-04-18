@@ -1,0 +1,3 @@
+[submodule "mgblib"]
+	path = mgblib
+	url = https://github.com/mattcurrie/mgblib
