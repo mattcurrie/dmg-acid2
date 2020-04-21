@@ -138,6 +138,7 @@ all possible failures.
 | ![failure image](img/failures/tile-sel.png) | Eye whites top left quadrant wrong | Background/Window Tile Data (bit 4) |
 | ![failure image](img/failures/win-enable.png) | Half of footer missing | Window Enable (bit 5) |
 | ![failure image](img/failures/win-map.png) | Right chin missing | Window Tile Map (bit 6) |
+| ![failure image](img/failures/win-line-counter.png) | Eye displayed instead of right chin | Window internal line counter |
 | ![failure image](img/failures/obj-priority-lower-x.png) | Left mole visible | Object Priority Lower X Coordinate |
 | ![failure image](img/failures/obj-priority-same-x.png) | Right mole visible | Object Priority Same X Coordinate |
 | ![failure image](img/failures/10-obj-limit.png) | Hello World missing exclaimation mark (!) | 10 object per line limit |
