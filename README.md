@@ -145,6 +145,44 @@ all possible failures.
 | ![failure image](img/failures/8x16-obj-tile-index-bit-0.png) | Half of mouth missing | Bit 0 of tile index for 8x16 objects should be ignored |
 | ![failure image](img/failures/misaligned-scx.png) | Misaligned footer text | SCX (FF43) not applied |
 
+## Per layer decomposition
+
+This section decomposes (for DMG) the result displayed image per layer: Background (BG), Window (WIN) and Tiles (OBJ), this may help in creating a passing PPU layer by layer.
+
+### BG
+
+A ppu that renders only the backgound part of the image should display the following image:
+
+![bg-only](img/per-layer/bg-only.png)
+
+Notice the exclamation mark is already there as part of the background.
+
+### BG + WIN
+
+A PPU that renders both window and backgound should display the following image:
+
+![bg+win](img/per-layer/bg+win.png)
+
+The following image highlights in blue the window part:
+
+![bg+win-highlighted](img/per-layer/bg+win-highlighted.png)
+
+### BG + WIN + TILES
+
+The following image highlights in red the OBJ part of the final targeted image:
+
+![bg+win+obj-highlighted](img/per-layer/bg+win+obj-highlighted.png)
+
+Notice that obj tiles are transparents and let below layers appear.
+
+Wrapping it all, the following image highlights both WIN (in blue) and OBJ (in red) for the final image:
+
+![bg+win-highlighted+obj-highlighted](img/per-layer/bg+win-highlighted+obj-highlighted.png)
+
+For context the following image highlights in yellow where PPU is disabled (LCDC bit 7 being reset) thus masking the hair:
+
+![bg+win-highlighted+obj-highlighted+lcd-off](img/per-layer/bg+win-highlighted+obj-highlighted+lcd-off.png)
+
 ## Credits
 Håkon Wium Lie and Ian Hickson for creation of the original 
 [Acid2](http://www.acidtests.org/) web standards compliance test.
