@@ -143,6 +143,7 @@ all possible failures.
 | ![failure image](img/failures/obj-priority-same-x.png) | Right mole visible | Object Priority Same X Coordinate |
 | ![failure image](img/failures/10-obj-limit.png) | Hello World missing exclaimation mark (!) | 10 object per line limit |
 | ![failure image](img/failures/8x16-obj-tile-index-bit-0.png) | Half of mouth missing | Bit 0 of tile index for 8x16 objects should be ignored |
+| ![failure image](img/failures/misaligned-scx.png) | Misaligned footer text | SCX (FF43) not applied |
 
 ## Credits
 Håkon Wium Lie and Ian Hickson for creation of the original 
