@@ -167,7 +167,7 @@ The following image highlights in blue the window part:
 
 <img src="img/per-layer/bg+win-highlighted.png" width="250" title="bg+win-highlighted">
 
-### BG + WIN + TILES
+### BG + WIN + OBJ
 
 The following image highlights in red the OBJ part of the final targeted image:
 
