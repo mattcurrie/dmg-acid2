@@ -153,7 +153,7 @@ This section decomposes (for DMG) the result displayed image per layer: Backgrou
 
 A ppu that renders only the backgound part of the image should display the following image:
 
-![bg-only](img/per-layer/bg-only.png)
+<img src="img/per-layer/bg-only.png" width="250" title="bg-only">
 
 Notice the exclamation mark is already there as part of the background.
 
@@ -161,27 +161,27 @@ Notice the exclamation mark is already there as part of the background.
 
 A PPU that renders both window and backgound should display the following image:
 
-![bg+win](img/per-layer/bg+win.png)
+<img src="img/per-layer/bg+win.png" width="250" title="bg+win">
 
 The following image highlights in blue the window part:
 
-![bg+win-highlighted](img/per-layer/bg+win-highlighted.png)
+<img src="img/per-layer/bg+win-highlighted.png" width="250" title="bg+win-highlighted">
 
 ### BG + WIN + TILES
 
 The following image highlights in red the OBJ part of the final targeted image:
 
-![bg+win+obj-highlighted](img/per-layer/bg+win+obj-highlighted.png)
+<img src="img/per-layer/bg+win+obj-highlighted.png" width="250" title="bg+win+obj-highlighted">
 
-Notice that obj tiles are transparents and let below layers appear.
+Notice that obj tiles are transparent and let below layers appear.
 
 Wrapping it all, the following image highlights both WIN (in blue) and OBJ (in red) for the final image:
 
-![bg+win-highlighted+obj-highlighted](img/per-layer/bg+win-highlighted+obj-highlighted.png)
+<img src="img/per-layer/bg+win-highlighted+obj-highlighted.png" width="250" title="bg+win-highlighted+obj-highlighted">
 
 For context the following image highlights in yellow where PPU is disabled (LCDC bit 7 being reset) thus masking the hair:
 
-![bg+win-highlighted+obj-highlighted+lcd-off](img/per-layer/bg+win-highlighted+obj-highlighted+lcd-off.png)
+<img src="img/per-layer/bg+win-highlighted+obj-highlighted+lcd-off.png" width="250" title="bg+win-highlighted+obj-highlighted+lcd-off">
 
 ## Credits
 Håkon Wium Lie and Ian Hickson for creation of the original 
