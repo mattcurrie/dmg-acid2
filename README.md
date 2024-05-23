@@ -143,6 +143,45 @@ all possible failures.
 | ![failure image](img/failures/obj-priority-same-x.png) | Right mole visible | Object Priority Same X Coordinate |
 | ![failure image](img/failures/10-obj-limit.png) | Hello World missing exclaimation mark (!) | 10 object per line limit |
 | ![failure image](img/failures/8x16-obj-tile-index-bit-0.png) | Half of mouth missing | Bit 0 of tile index for 8x16 objects should be ignored |
+| ![failure image](img/failures/misaligned-scx.png) | Misaligned footer text | SCX (FF43) not applied |
+
+## Per layer decomposition
+
+This section decomposes (for DMG) the result displayed image per layer: Background (BG), Window (WIN) and Tiles (OBJ), this may help in creating a passing PPU layer by layer.
+
+### BG
+
+A ppu that renders only the backgound part of the image should display the following image:
+
+<img src="img/per-layer/bg-only.png" width="250" title="bg-only">
+
+Notice the exclamation mark is already there as part of the background.
+
+### BG + WIN
+
+A PPU that renders both window and backgound should display the following image:
+
+<img src="img/per-layer/bg+win.png" width="250" title="bg+win">
+
+The following image highlights in blue the window part:
+
+<img src="img/per-layer/bg+win-highlighted.png" width="250" title="bg+win-highlighted">
+
+### BG + WIN + OBJ
+
+The following image highlights in red the OBJ part of the final targeted image:
+
+<img src="img/per-layer/bg+win+obj-highlighted.png" width="250" title="bg+win+obj-highlighted">
+
+Notice that obj tiles are transparent and let below layers appear.
+
+Wrapping it all, the following image highlights both WIN (in blue) and OBJ (in red) for the final image:
+
+<img src="img/per-layer/bg+win-highlighted+obj-highlighted.png" width="250" title="bg+win-highlighted+obj-highlighted">
+
+For context the following image highlights in yellow where PPU is disabled (LCDC bit 7 being reset) thus masking the hair:
+
+<img src="img/per-layer/bg+win-highlighted+obj-highlighted+lcd-off.png" width="250" title="bg+win-highlighted+obj-highlighted+lcd-off">
 
 ## Credits
 Håkon Wium Lie and Ian Hickson for creation of the original 
